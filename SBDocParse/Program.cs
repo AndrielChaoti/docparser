@@ -101,6 +101,9 @@ namespace SBDocParse
             Trace.Listeners.Add(new TextWriterTraceListener(Console.Out));
             Trace.AutoFlush = true;
 
+            Trace.WriteLine("Starbound Documentation Parsing");
+            Trace.WriteLine("Copyright (©)2017 Donald Granger");
+
             if (args.Length < 2)
             {
                 // no file argument, stop running
@@ -111,8 +114,6 @@ namespace SBDocParse
 
             try
             {
-                Trace.WriteLine("Starbound Documentation Parsing");
-
 
                 // Read files, cache in list
                 Trace.Write("Loading all files... \n");
